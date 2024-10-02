@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f6f8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3, h4, h7 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h2{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* Display Button */
+.display-button {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 5px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1f2937;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    top: 45px;
+    left: 50px;
+}
+
+.display-button:hover {
+    background-color: #f3f4f6;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    top: 45px;
+    left: 50px;
+    z-index: 10;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    width: 240px;
+}
+
+.dropdown-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #aaaaaa;
+    margin-right: 60px;
+}
+
+select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    color: #000000;
+    background-color: white;
+    width: 100px;
+}
+
+/* Kanban Board Layout */
+.kanban-board {
+    display: flex;
+    gap: 24px; /* Space between columns */
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.kanban-column {
+    padding: 20px;
+    width: 30%; /* 3 columns, flexible */
+    min-width: 280px;
+}
+
+.kanban-column-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Decreased space between icon and text */
+    margin-bottom: 20px;
+    /* margin-right: 29px; */
+}
+
+.kanban-header-icons{
+    align-items: center;
+    gap: 12px;
+    left:0px;
+    right:6px;
+}
+
+.kanban-column-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Increased space between text and add icon */
+}
+
+/* Kanban Card Styles */
+.kanban-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 12px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.kanban-card h4 {
+    font-size: 14px;
+    font-weight: 500;
+    /* text-wrap: auto; */
+    color: #111827;
+    margin-bottom: 6px;
+    
+}
+
+.kanban-card h7 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Tag and Icon Styles */
+.tag-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tag-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.tag-text {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Additional Precise Spacing and Sizing */
+.kanban-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 12px;
+}
+
+.kanban-column {
+    min-width: 280px;
+    max-width: 300px;
+}
+
+select {
+    font-size: 13px;
+    padding: 8px;
+}
+
+/* Hover and Interaction Effects */
+.kanban-card:hover {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.12);
+}
+
+.display-button:focus, 
+.dropdown select:focus {
+    outline: none;
+    border: 1px solid #4f46e5;
+}
+
+/* Box Shadows for Depth */
+/* .kanban-column {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+} */
